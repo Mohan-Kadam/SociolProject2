@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+            <form action="answer" method="POST">
+                    <tr>
+                        <td>Your Answer</td>
+                        <td>
+                            <input type="textarea" name="address" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="submit" >
+                        </td>
+                    </tr>
+
+            </form>
+
+{% endblock %}

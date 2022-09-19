@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div id="page">
+{% for item in post %}
+    <div class = 'servicelist'>
+        {% if item.category == 'Photo Editing' %}
+            <div id="webdesigncontent">
+            <article>
+                <h2>Name: {{ item.name }}</h2>
+                <h3>Category: {{ item.category }}</h3>
+                <h3>Price: {{ item.price }}</h3>
+            </article>
+            </div>
+        {% endif %}
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

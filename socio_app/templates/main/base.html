@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Socio</title>
+    <link rel="stylesheet" href="{% static 'Css/style.css' %}">
+    <!-- CSS only -->
+
+</head>
+<body>
+    <header class="page-header">
+      <div class="navbar">
+          <nav>
+                <h1>SOCIO</h1>
+                <ul>
+
+                    <li><a href="{% url 'homepage' %}">Home</a></li>
+                    <li><a href="#about_us">About Us</a></li>
+                    <li><a href="#browse_service">Services</a></li>
+                    <li><a href="{% url 'query_list' %}">Queries</a></li>
+
+                    {% if user.is_authenticated %}
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                    {% endif %}
+
+                    <li id="signup"><a href="{% url 'register' %}">Sign Up</a></li>
+
+                </ul>
+
+          </nav>
+      </div>
+     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

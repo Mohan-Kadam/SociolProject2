@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div id="query_detail_outer">
+    <div id="query_detail_inner">
+        <h1 id="detail_question">{{ query.question }}</h1>
+
+        {% for item in answer %}
+            <br>
+            <br>
+            <h3>Solution: </h3>
+            <p>{{ item.detail }}</p>
+            <span >posted by: {{ query.user }}</span>
+        {% endfor %}
+        <br>
+        <br>
+        <hr>
+        <br>
+    <form method="POST" class="post-form">
+        {% csrf_token %}
+        {{ answer_form | crispy }}
+        <button class="all_btn" type="submit" class="btn btn-primary" id="btn-save">Save</button>
+    </form>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div id="outer_post_service">
+    <div id="inner_post_service">
+        <h1>Post Your Service</h1>
+        <form method="POST" class="post-form">
+            <br>
+            {% csrf_token %}
+            {{ form_data | crispy }}
+            <button class="all_btn" type="submit" id="service_save_btn"">Save</button>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

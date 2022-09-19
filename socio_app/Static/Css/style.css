@@ -1,0 +1,446 @@
+{% load static %}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    font-family: "Nunito";
+    background-color:#FFFFFF;
+    margin-top:6.25rem;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 0 0.0625rem 0.0625rem #FFFFFF;
+    line-height: 6.25rem;
+    background-color: #FFFFFF;
+}
+
+ul{
+    display: inline-block;
+    justify-content: space-around;
+    list-style: none;
+    float: right;
+}
+
+li{
+    display: inline-block;
+    margin: 0 1.5rem;
+    line-height: 6.25rem;
+    font-size: 1.25rem;
+}
+
+
+a{
+    text-decoration: none;
+    color:#000000;
+}
+
+h1{
+    font-size: 2rem;
+
+}
+p{
+    margin-top: 0.12rem;
+
+}
+
+
+#bg_main{
+    height:100%;
+    float: right;
+
+}
+.container{
+    display: flex;
+
+}
+
+#content h2{
+    margin-top: 3.12rem;
+    font-weight: 37.5rem;
+    font-size: 2.93rem;
+    margin:5rem;
+
+}
+
+
+
+
+
+
+
+
+
+#browseh3, #abouth3{
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.container2{
+
+    margin-left:6.25rem;
+    margin-right:6.25rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+
+}
+
+#services{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    margin:1.25rem;
+
+}
+
+#webdesign, #videoediting, #photoediting,#itservice,#IT Service,#uidesign,#account{
+
+    margin: 1.8rem;
+    width: 33.33%;
+    height:12.5rem;
+    box-shadow: 0 0 0.18rem 0.0625rem;
+    text-align: center;
+    justify-text: center;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+#services, #services2{
+    display: flex;
+    width: 100%;
+    margin:auto;
+}
+
+.container3{
+    margin: 6.25rem;
+
+}
+
+#login{
+    margin: 7.5rem auto;
+    max-width: 37.5rem ;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 0.625rem;
+    background-shadow:0.625rem;
+    box-shadow: 0 0 0.31rem 0.18rem;
+    padding:3.12rem;
+}
+
+#register{
+    margin: 7.5rem auto;
+    max-width: 50rem ;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 0.625rem;
+    background-shadow:0.625rem;
+    box-shadow: 0 0 0.31rem 0.18rem;
+    padding:3.12rem;
+}
+
+#btn-services{
+     border-radius: 0.625rem;
+     background-color: 	#CF9FFF;
+     cursor: pointer;
+     box-shadow: 0 0 0.0625rem 0.0625rem;
+     border: none;
+     padding-top: 0px;
+
+}
+
+#bg{
+    width: 50rem;
+    height: 31.25rem;
+}
+
+#page{
+    margin: 7.5rem auto;
+    max-width: 70.5rem ;
+    display: flex;
+
+
+}
+
+.servicelist{
+    margin: 20px;
+    padding: 10px;
+
+
+
+}
+
+#webdesigncontent{
+    margin: 1.8rem;
+    width: 100%;
+    height:12.5rem;
+    box-shadow: 0 0 0.18rem 0.0625rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+
+
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    cursor: pointer;
+}
+
+hr{
+
+    margin: 15px;
+
+}
+
+
+
+
+#addquery_div{
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Query List Page */
+
+#querypage{
+    margin: 7.5rem auto;
+    max-width: 70.5rem ;
+
+}
+
+#query_list{
+    background-color: whitesmoke;
+    border-radius: 0px;
+    background-shadow:10px;
+    box-shadow: 0 0 1px 0px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#query_header{
+    display: flex;
+
+}
+
+#query_search{
+    font-size: 15px;
+    width: 800px;
+    height:40px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+#search-btn, #btn_ask_query{
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+#query_span{
+    margin-right: 10px;
+    margin-top: 20px;
+    font-style: bold;
+    display: inline-block;
+    color: #051094;
+
+}
+
+#quest_a_tag:hover{
+    color :#051094;
+}
+
+
+
+/* Query Detail Page */
+
+#query_detail_outer{
+    margin: 7.5rem auto;
+    max-width: 70.5rem ;
+    box-shadow: 0 0 1px 0px;
+
+}
+
+
+#query_detail_inner{
+    margin: 20px;
+    padding: 20px;
+
+}
+
+#detail_question{
+    color :#051094;
+    font-size: 50px;
+}
+
+#btn-save{
+    width: 100px;
+    height: 40px;
+
+}
+
+
+/* LOGIN PAGE */
+
+#btn-login{
+    width: 70px;
+    height: 30px;
+
+}
+
+tr{
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* ADD_QUERY PAGE */
+
+#add_query_article{
+    margin: 7.5rem auto;
+    max-width: 70.5rem ;
+    box-shadow: 0 0 1px 0px;
+}
+
+
+
+/* HOMEPAGE */
+
+#btn{
+    margin-left: 80px;
+}
+
+#btn_provide,#btn_find{
+    border-radius: 0.625rem;
+     padding:1.25rem;
+     margin-right:4.25rem;
+     margin-bottom: 6.25rem;
+     background-color: 	#CF9FFF;
+     cursor: pointer;
+     box-shadow: 0 0 0.0625rem 0.0625rem;
+     border: none;
+}
+
+#hover1:hover{
+    background-color: whitesmoke:
+    cursor: pointer;
+}
+
+
+/* ADD SERVICE PAGE */
+
+#outer_post_service{
+    margin: 7.5rem auto;
+    max-width: 40.5rem ;
+    box-shadow: 0 0 1px 0px;
+}
+
+#inner_post_service{
+    margin: 20px;
+    padding: 20px;
+}
+
+#service_save_btn{
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.all_btn{
+    background-color: #CF9FFF;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+.all_btn:hover{
+    background-color: whitesmoke;
+    cursor:pointer;
+
+}
+
+
+
+#btn-login, #btn-submit,{
+     border-radius: 10px;
+     padding:5px;
+     margin-bottom: 5px;
+     background-color: #CF9FFF;
+     cursor: pointer;
+     box-shadow: 0 0 1px 1px;
+     border: none;
+     margin: 3px;
+}
+
+
+
+
+
+}
+
+
+
+
+#outer_post_service{
+    margin: 7.5rem auto;
+    max-width: 37.5rem ;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 0.625rem;
+    background-shadow:0.625rem;
+    box-shadow: 0 0 0.31rem 0.18rem;
+    padding:3.12rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:998px){
+    html{
+        font-size: 88%;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 72%;
+    }
+}

@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div id="querypage">
+    <header id="query_header">
+
+        <form>
+            <input type="text" name="query" id="query_search" placeholder="Search Your Questions">
+            <button  type="submit" class="all_btn" id="search-btn" >Search</button>
+        </form>
+        <div id="btn_ask_query">
+            <button class="all_btn" id="btn_ask_query" ><a href="{% url 'queries' %}">Ask Query</a></button>
+        </div>
+    </header>
+
+    <hr>
+
+    {% for item in query_post %}
+
+        {% if item.approval == True %}
+        <article id="query_list">
+            <div id="query_list_inner">
+                <h1><a id="quest_a_tag" href="{% url 'query_detail' pk=item.pk  %}">{{ item.question }} ?</a></h1>
+                <p>{{ item.question_detail }}</p>
+                <span id="query_span"><a id='quest_a_tag' href="#">{{ item.user }}</a></span>
+                <span id="query_span">{{ item.create_date }}</span>
+            </div>
+        </article>
+        {% endif %}
+
+    {% endfor %}
+</div>
+
+{% endblock %}

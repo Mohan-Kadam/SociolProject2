@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<article id="add_query_article">
+    <div id="addquery_div">
+        <h1>Post Your Query</h1>
+        <p>!!! Note !!!  -   Your query will be visible on query page only when admin approves your query</p>
+
+        <form method="POST" class="post-form">
+            {% csrf_token %}
+            <br>
+            {{ query_form | crispy }}
+            <br>
+            <button class="all_btn" type="submit" class="btn btn-primary" id="btn-save">Save</button>
+        </form>
+    </div>
+</article>
+
+{% endblock %}

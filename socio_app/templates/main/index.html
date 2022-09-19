@@ -1,0 +1,140 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container">
+        <div id="content">
+            <h2>
+                The Leading Community Platform For The Open Web
+            </h2>
+
+            <div id="btn">
+                <span  id="btn_provide"<btn id="hover1"><a href="{% url 'postservice' %}">Sell Services</a></btn></span>
+                <span id="btn_find"><btn id="hover1" ><a href="#browse_service">Buy Services</btn></a></span>
+            </div>
+
+        </div>
+
+
+
+        <div id="bg_main">
+            <img src="{% static 'Images/bg_main.png' %}" id="bg">
+        </div>
+
+    </div>
+
+
+
+    <div class="container2"id="browse_service">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 id="browseh3">Browse Our Services</h3>
+
+        <div id="services">
+            <div id="webdesign">
+                <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-web-design-home-based-business-flaticons-flat-flat-icons-4.png"/>
+                <h4>Web Design</h4>
+                <div>
+
+                    <btn id="btn-services"><a href="{% url 'webdesign_list' %}">Browse Service</a></btn>
+                </div>
+            </div>
+
+            <div id="videoediting">
+                <img src="https://img.icons8.com/nolan/64/movavi.png"/>
+                <h4>Video Editing</h4>
+                <div>
+
+                    <btn id="btn-services"><a href="{% url 'videoediting_list' %}">Browse Service</a></btn>
+                </div>
+            </div>
+
+            <div id="photoediting">
+                <img src="https://img.icons8.com/fluency/48/000000/affinity-photo-1.png"/>
+                <h4>Photo Editing</h4>
+                <div>
+
+                    <btn id="btn-services"><a href="{% url 'photoediting_list' %}">Browse Service</a></btn>
+                </div>
+            </div>
+        </div>
+
+        <div id="services2">
+            <div id="itservice">
+                <img src="https://img.icons8.com/bubbles/50/000000/services.png"/>
+                <h4>IT Service</h4>
+                <div>
+
+                    <btn id="btn-services"><a href="{% url 'it_list' %}">Browse Service</a></btn>
+                </div>
+            </div>
+
+            <div id="uidesign">
+                <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-ui-design-marketing-agency-flaticons-lineal-color-flat-icons.png"/>
+                <h4>UI/UX Design</h4>
+                <div>
+
+                    <btn id="btn-services"><a href="{% url 'uidesign_list' %}">Browse Service</a></btn>
+                </div>
+            </div>
+
+            <div id="account">
+                <img src="https://img.icons8.com/external-soft-fill-juicy-fish/60/000000/external-accountancy-financial-services-soft-fill-soft-fill-juicy-fish.png"/>
+                <h4>Accountancy & Taxation</h4>
+                <div>
+
+                    <btn id="btn-services"><a href="{% url 'account_list' %}">Browse Service</a></btn>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="container3" id="about_us" >
+        <h3 id="abouth3">About Us</h3>
+        <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and write your own CSS with our variables, maps, functions, and mixins.
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>loremipsum</p>
+
+{% endblock %}
